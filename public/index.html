@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Notes App</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+          integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<div class="header">
+    <h2 class="text-center">Notes App</h2>
+    <h4 class="text-center">You Have <span id="notesCount"></span> Notes</h4>
+</div>
+<div class="form">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6">
+                <!--<select id="filter-by" class="btn btn-secondary">
+                    <option value="byEdited">Sort by Last Edited</option>
+                    <option value="byCreated">Sort by Recently Created</option>
+                    <option value="alphabetical">Sort Alphabetically</option>
+                </select>-->
+            </div>
+            <div class="col-md-4">
+                <input type="text" class="form-control" id="search-note" placeholder="search...">
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="container">
+    <div class="row mb-3">
+        <div class="col-md-8">
+            <h3 class="text-center">All Notes</h3>
+        </div>
+        <div class="col-md-2">
+            <button id="createNote" class="btn btn-small btn-info"> Add New Note</button>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-12">
+            <div id="notes"></div>
+        </div>
+    </div>
+</div>
+</body>
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+<script src="scripts/index-bundle.js"></script>
+</html>
